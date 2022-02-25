@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TextView empty to show color of background -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#f9f9f9"
+        />
+    <!-- End TextView -->
+
+    <!-- Border below  -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/textView"
+        android:background="#DCDCDC"
+        />
+    <!-- End Border -->
+
+    <!-- ImageView for avatar -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#FFF8DC"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        app:strokeWidth="2dp"
+        app:strokeColor="#DCDCDC"
+        app:shapeAppearanceOverlay="@style/circle_image"
+        />
+    <!-- End ImageView -->
+
+    <TextView
+        android:id="@+id/textViewHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, My name is"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewPresent"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHello"
+        android:layout_centerHorizontal="true"
+        android:text="Huan Nguyen"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+</RelativeLayout>
